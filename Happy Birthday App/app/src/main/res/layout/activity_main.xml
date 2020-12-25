@@ -6,15 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/birthday_image"
+        android:contentDescription="TODO" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="370dp"
         android:layout_height="88dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Happy Birthday Amma!"
-        android:textColor="#58FF3B"
+        android:layout_marginTop="70dp"
+        android:text="@string/happy_birthday_amma"
+        android:textColor="#C20DE1"
         android:textSize="35sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,8 +39,8 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
-        android:text="From Lovely son"
-        android:textColor="#49DC39"
+        android:text="@string/from_lovely_son"
+        android:textColor="#E60C56"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
