@@ -3,7 +3,9 @@ package com.example.dice
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 
 /**
  * this activity allows the uset to roll the dice and see the result on the screen
@@ -34,13 +36,32 @@ class MainActivity : AppCompatActivity() {
 
     /**
      * this function contains the logic to roll the dice and display the result on the screen
+     * and display a pop-up toast if the output of the user roll is greater than 4
      */
     private fun roll_dice_action() {
         val generate = Dice(6)
         val diceroll = generate.rolldice()
 
-        val resultTextView : TextView = findViewById(R.id.textView)
-        resultTextView.text = diceroll.toString()
+        val dice_image:ImageView = findViewById(R.id.imageView)
+
+        when(diceroll){
+            1 -> dice_image.setImageResource(R.drawable.dice_1)
+            2 -> dice_image.setImageResource(R.drawable.dice_2)
+            3 -> dice_image.setImageResource(R.drawable.dice_3)
+            4 -> dice_image.setImageResource(R.drawable.dice_4)
+            5 -> dice_image.setImageResource(R.drawable.dice_5)
+            6 -> dice_image.setImageResource(R.drawable.dice_6)
+        }
+
+        //toast here
+        if(diceroll > 4){
+            val toast = Toast.makeText(this,"Congratulations Dude",Toast.LENGTH_SHORT)
+            toast.show()
+        }
+        else{
+            val toast = Toast.makeText(this,"Sorry try again",Toast.LENGTH_SHORT)
+            toast.show()
+        }
     }
 }
 
