@@ -44,6 +44,8 @@ class MainActivity : AppCompatActivity() {
 
         val dice_image:ImageView = findViewById(R.id.imageView)
 
+        //changes the image of the dice when it is rolled
+
         when(diceroll){
             1 -> dice_image.setImageResource(R.drawable.dice_1)
             2 -> dice_image.setImageResource(R.drawable.dice_2)
@@ -53,7 +55,12 @@ class MainActivity : AppCompatActivity() {
             6 -> dice_image.setImageResource(R.drawable.dice_6)
         }
 
-        //toast here
+        dice_image.contentDescription = diceroll.toString()
+
+        /**
+         * toast is like a pop up in html but from the down part of the device
+         * create a toast object and call the method show in its class to show itself
+         */
         if(diceroll > 4){
             val toast = Toast.makeText(this,"Congratulations Dude",Toast.LENGTH_SHORT)
             toast.show()
@@ -65,6 +72,9 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
+/**
+ * the class dice which actually is responsible for the random number that is being generated
+ */
 class Dice(private val no_of_sides:Int){
     fun rolldice():Int{
         return (1..no_of_sides).random()
