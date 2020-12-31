@@ -37,7 +37,7 @@
         app:layout_constraintTop_toBottomOf="@+id/servicequestion">
 
         <RadioButton
-            android:id="@+id/twenty_percent_cost_of_service"
+            android:id="@+id/twenty_percent_cost"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/amazing_20" />
@@ -84,6 +84,8 @@
         android:layout_marginTop="3dp"
         android:text="@string/tip_amount"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calculate_button" />
+        app:layout_constraintTop_toBottomOf="@+id/calculate_button"
+        tools:text="Tip Amount : $10"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
