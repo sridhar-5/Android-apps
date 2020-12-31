@@ -24,7 +24,21 @@ class MainActivity:AppCompatActivity(){
         val StringinTextfield = binding.costOfService.text.toString()
 
         //converting it into double now
-        val costindoubletype = StringinTextfield.toDouble()
+        val costindoubletype = StringinTextfield.toDoubleOrNull()
+
+        //if the entered edit text view is left null then the app crashes without this code here
+        /**
+         * enters a valid amount for the cost
+         * taps Calculate to calculate the tip
+         * deletes the cost
+         * taps Calculate again?
+         * now the result is the tip amount of the previous case shows out which creates confusion to the user so to solve this bug
+         * binding.tipresult.text should be null so that the cost is evaluated to zero when converted to double
+         */
+        if(costindoubletype == null){
+            binding.tipResult.text = ""
+            return
+        }
 
         //now extracting the percent of the discount from the radio button selected
 
