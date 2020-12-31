@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Tip Application</string>
+    <string name="cost_of_service">Cost_of_service</string>
+    <string name="how_was_the_service">How was the service ?</string>
+</resources>
