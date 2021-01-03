@@ -68,7 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/servicequestion"
         app:layout_constraintTop_toBottomOf="@+id/servicequestion">
 
         <RadioButton
@@ -90,17 +90,29 @@
             android:text="@string/okay_15" />
     </RadioGroup>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/icon_round_up"
+        app:layout_constraintTop_toTopOf="@+id/round_up_switch"
+        app:layout_constraintBottom_toBottomOf="@+id/round_up_switch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_round_up"
+        tools:ignore="RtlCompat"
+        android:contentDescription="@string/just_for_fun" />
+
     <com.google.android.material.switchmaterial.SwitchMaterial
         android:id="@+id/round_up_switch"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
+        android:layout_marginStart="16dp"
         android:checked="true"
         android:text="@string/round_up_tip"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/icon_round_up"
         app:layout_constraintTop_toBottomOf="@+id/tip_option"
-        tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+        tools:ignore="HardcodedText,RtlCompat,UseSwitchCompatOrMaterialXml" />
 
     <Button
         android:id="@+id/calculate_button"
@@ -109,8 +121,10 @@
         android:layout_marginTop="5dp"
         android:text="@string/calculate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/round_up_switch" />
+        app:layout_constraintStart_toStartOf="@+id/round_up_switch"
+        app:layout_constraintTop_toBottomOf="@+id/round_up_switch"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp" />
 
     <TextView
         android:id="@+id/tip_result"

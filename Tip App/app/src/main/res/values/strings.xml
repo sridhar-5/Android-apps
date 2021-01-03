@@ -12,4 +12,5 @@
     <string name="calculate">Calculate</string>
     <string name="tip_amount">Tip Amount: %s</string>
     <string name="todo">TODO</string>
+    <string name="just_for_fun">just_for_fun</string>
 </resources>
