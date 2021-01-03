@@ -11,4 +11,5 @@
     <string name="okay_15">Okay (15%)</string>
     <string name="calculate">Calculate</string>
     <string name="tip_amount">Tip Amount: %s</string>
+    <string name="todo">TODO</string>
 </resources>

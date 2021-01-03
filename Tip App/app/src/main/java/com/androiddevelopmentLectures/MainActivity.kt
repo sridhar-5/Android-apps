@@ -3,6 +3,8 @@ package com.androiddevelopmentLectures
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.androiddevelopmentLectures.databinding.ActivityMainBinding
+import java.text.NumberFormat
+import kotlin.math.ceil
 
 class MainActivity:AppCompatActivity(){
     private lateinit var binding: ActivityMainBinding
@@ -21,7 +23,7 @@ class MainActivity:AppCompatActivity(){
 
     private fun calculateTip() {
         //extracting the text in the edit text view and using it
-        val stringinTextfield = binding.costOfService.text.toString()
+        val stringinTextfield = binding.costOfServiceEditText.text.toString()
 
         //converting it into double now
         val costindoubletype = stringinTextfield.toDoubleOrNull()
@@ -44,7 +46,7 @@ class MainActivity:AppCompatActivity(){
 
         val tippercent = when(binding.tipOption.checkedRadioButtonId){
             R.id.twenty_percent_cost -> 0.20
-            R.id.fifteen_percent_of_cost -> 0.15
+            R.id.fifteen_percent_of_cost -> 0.18
             else -> 0.15
         }
 
@@ -52,10 +54,10 @@ class MainActivity:AppCompatActivity(){
 
         val roundUp = binding.roundUpSwitch.isChecked
         if(roundUp){
-            tipcost = kotlin.math.ceil(tipcost)
+            tipcost = ceil(tipcost)
         }
 
-        val formattedtip = java.text.NumberFormat.getCurrencyInstance().format(tipcost)
+        val formattedtip = NumberFormat.getCurrencyInstance().format(tipcost)
         binding.tipResult.text = getString(R.string.tip_amount,formattedtip)
 
     }
