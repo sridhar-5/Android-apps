@@ -5,4 +5,10 @@
         <item name="android:gravity">center_vertical</item>
         <item name="android:textAppearance">?attr/textAppearanceBody1</item>
     </style>
+
+    <style name="widget_tip_compoundButton_switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
 </resources>
