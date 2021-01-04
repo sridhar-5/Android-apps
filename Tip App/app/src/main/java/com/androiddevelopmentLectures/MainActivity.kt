@@ -24,8 +24,6 @@ class MainActivity:AppCompatActivity(){
         binding.costOfServiceEditText.setOnKeyListener { v, keyCode,_ ->handleKeyEvent(v,keyCode)  }
     }
 
-
-
     private fun calculateTip() {
         //extracting the text in the edit text view and using it
         val stringinTextfield = binding.costOfServiceEditText.text.toString()
