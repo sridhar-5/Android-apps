@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Affirmaions App.</string>
+    <string name="affirmation1">I am Strong.</string>
+    <string name="affirmation2">I Believe in myself.</string>
+    <string name="affirmation3">Each day is a new opportunity to be a better version of myself.</string>
+    <string name="affirmation4">Every challenge in my life is an opportunity to learn from.</string>
+    <string name="affirmation5">I have so much to be grateful for.</string>
+    <string name="affirmation6">I Hope this semester is better than the last.</string>
+    <string name="affirmation7">Let\'s Hope for the best.</string>
+    <string name="affirmation8">New opportunities await me at every turn of my life.</string>
+    <string name="affirmation9">I have courage to follow my heart.</string>
+    <string name="affirmation10">I will be present in all the moments this day brings.</string>
+</resources>
