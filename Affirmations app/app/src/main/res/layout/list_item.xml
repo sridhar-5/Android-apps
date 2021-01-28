@@ -9,6 +9,7 @@
         android:layout_height="194dp"
         android:layout_margin="8dp"
         android:scaleType="centerCrop"
+        android:padding="16dp"
         android:id="@+id/image_item"/>
 
     <TextView
@@ -19,6 +20,8 @@
         android:layout_below="@id/image_item"
         android:layout_centerVertical="true"
         android:textSize="18sp"
+        android:padding="16dp"
+        android:textAppearance="?attr/textAppearanceHeadline6"
         android:textColor="@android:color/holo_green_dark"/>
 
 </RelativeLayout>
