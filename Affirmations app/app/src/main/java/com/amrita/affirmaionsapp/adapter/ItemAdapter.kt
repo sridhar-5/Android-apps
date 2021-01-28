@@ -12,7 +12,7 @@ import com.amrita.affirmaionsapp.model.Affirmations
 
 class ItemAdapter(private val context: Context,private val dataset: List<Affirmations>):RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
     class ItemViewHolder(private val view:View):RecyclerView.ViewHolder(view){
-        val imageView:ImageView = view.findViewById(R.id.image)
+        val imageView:ImageView = view.findViewById(R.id.image_item)
         val textview:TextView = view.findViewById(R.id.item_title)
     }
 
@@ -30,6 +30,7 @@ class ItemAdapter(private val context: Context,private val dataset: List<Affirma
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
         holder.textview.text = context.resources.getString(item.stringResourceId)
+        holder.imageView.setImageResource(item.imageResourceId)
     }
 
     /**
