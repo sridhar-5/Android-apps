@@ -1,27 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_margin="8dp">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="194dp"
-        android:layout_margin="8dp"
-        android:scaleType="centerCrop"
-        android:padding="16dp"
-        android:id="@+id/image_item"/>
-
-    <TextView
-        android:id="@+id/item_title"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/image_item"
-        android:layout_centerVertical="true"
-        android:textSize="18sp"
-        android:padding="16dp"
-        android:textAppearance="?attr/textAppearanceHeadline6"
-        android:textColor="@android:color/holo_green_dark"/>
+        android:orientation="vertical">
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/image_item"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:padding="16dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_item"
+            android:layout_centerVertical="true"
+            android:padding="16dp"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:textColor="@android:color/holo_green_dark" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
