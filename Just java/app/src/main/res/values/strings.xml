@@ -3,4 +3,7 @@
     <string name="quantity">Quantity</string>
     <string name="_0">0</string>
     <string name="submit">submit</string>
+    <string name="price">price</string>
+    <string name="increase">+</string>
+    <string name="decrease">-</string>
 </resources>

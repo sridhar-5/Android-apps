@@ -1,30 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="match_parent"
     android:layout_width="match_parent"
-    tools:context=".MainActivity"
-    android:padding="16dp">
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/quantity"
-        android:id="@+id/textView1"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/quantityContent"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/_0"/>
+        android:text="@string/quantity" />
 
     <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/textView1"
+        android:text="@string/increase"
+        android:id="@+id/button_incr"
+        android:layout_marginTop="1dp"
+        android:onClick="increment"
+        android:layout_marginBottom="1dp"
+        />
+
+    <TextView
+        android:id="@+id/quantityContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below = "@id/quantityContent"
-        android:text="@string/submit"
-        android:id="@+id/submit_button" />
+        android:layout_below="@+id/button_incr"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/_0" />
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/quantityContent"
+        android:text="@string/decrease"
+        android:id="@+id/button_decr"
+        android:layout_marginTop="2dp"
+        android:onClick="decrement"
+        android:layout_marginBottom="2dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_decr"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/price"
+        android:id="@+id/price_text"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/_0"
+        android:id="@+id/price"
+        />
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price"
+        android:onClick="submitOrder"
+        android:text="@string/submit" />
 
 </RelativeLayout>
