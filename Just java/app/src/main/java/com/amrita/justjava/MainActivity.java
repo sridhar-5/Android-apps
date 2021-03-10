@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private void display(int number) {
         TextView quantityTextView = (TextView) findViewById(R.id.quantityContent);
-        quantityTextView.setText("Hi Sridhar" + number);
+        quantityTextView.setText("" + number);
         displayPrice(number);
     }
 
