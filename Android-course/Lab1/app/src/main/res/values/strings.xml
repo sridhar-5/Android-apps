@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Lab1</string>
+    <string name="press_this">Press this</string>
+    <string name="button1">Button1</string>
+    <string name="button2">Button2</string>
+    <string name="button3">Button3</string>
+    <string name="somex">somex</string>
+    <string name="_0">0</string>
+    <string name="who_is_your_fav">Who is your fav?</string>
+    <string name="d_geniferr_lopez">D. geniferr lopez</string>
+    <string name="c_kendell_genner">C. Kendell genner</string>
+    <string name="b_taylor_swift">B. Taylor swift</string>
+    <string name="a_selena_gomez">A. Selena Gomez</string>
+    <string name="submit">submit</string>
+</resources>

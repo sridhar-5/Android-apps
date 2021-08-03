@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/fullview">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0"
+        android:layout_marginStart="190dp"
+        android:id="@+id/textview1"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button1"
+        android:background="@drawable/button_bg"
+        android:id="@+id/one"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button2"
+        android:id="@+id/two"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button3"
+        android:id="@+id/three"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/who_is_your_fav"
+        android:textColor="@color/purple_500"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="50dp"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radiogroup1"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:id="@+id/selena"
+            android:text="@string/a_selena_gomez"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:id="@+id/taylor"
+            android:text="@string/b_taylor_swift"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:id="@+id/kendell"
+            android:text="@string/c_kendell_genner"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:id="@+id/lopez"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:text="@string/d_geniferr_lopez"/>
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:id="@+id/submit"
+        android:text="@string/submit"/>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Application2</string>
+    <string name="click_this">Click this</string>
+    <string name="enter_password">Enter password:</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="firstname">firstname</string>
+    <string name="last_name">Last Name</string>
+    <string name="username">UserName:</string>
+    <string name="phone">phone</string>
+    <string name="phone_number">phone number</string>
+    <string name="email_id">email-id</string>
+    <string name="e_mail">E-Mail</string>
+</resources>
