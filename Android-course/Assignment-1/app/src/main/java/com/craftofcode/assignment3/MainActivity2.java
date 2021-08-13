@@ -1,7 +1,9 @@
 package com.craftofcode.assignment3;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -11,8 +13,10 @@ import com.craftofcode.assignment3.adapter.ItemListAdapter;
 
 import java.util.LinkedList;
 
-public class MainActivity2 extends AppCompatActivity {
+public class MainActivity2 extends AppCompatActivity implements View.OnClickListener{
     public RecyclerView recyclerView;
+    public LinkedList<String> ItemsOrdered = new LinkedList<>();
+    public LinkedList<Integer> ItemsOrderedPrice = new LinkedList<>();
     public ItemListAdapter adapter;
     public String[] ItemNamesInStore = {"Peppy paneer Pizza", "Paneer Makhni Pizza", "Cheese Burst Pizza", "Corn Pizza","papperoni pizza","farm house pizza", "vegie deilight pizza","chicken pizza", "tandoori pizza","custom pizza"};
     public double[] PricesOfItemsInStore = {250,260,240.5,350,312,250,260,240.5,350,312};
@@ -44,7 +48,16 @@ public class MainActivity2 extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
         adapter = new ItemListAdapter(this, ItemNameList, ItemImage, ItemPrice);
         recyclerView.setAdapter(adapter);
-
+//        recyclerView.setOnClickListener(this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
     }
+
+//    @Override
+//    public void onClick(View v) {
+//        int position = recyclerView.getChildLayoutPosition(v);
+//        Toast toast = Toast.makeText(getApplicationContext(),position, Toast.LENGTH_SHORT);
+//        ItemsOrdered.addLast(ItemNameList.get(position));
+//        ItemsOrderedPrice.addLast(ItemsOrderedPrice.get(position));
+//    }
 }
