@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PhoneCall</string>
+    <string name="enter_phone_number">enter phone number</string>
+    <string name="dial">Dial</string>
+    <string name="call">Call</string>
+    <string name="hello">Hello</string>
+</resources>
