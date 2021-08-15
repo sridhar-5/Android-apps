@@ -1,20 +1,23 @@
 package com.craftofcode.assignment3;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.craftofcode.assignment3.adapter.ItemListAdapter;
+import com.craftofcode.assignment3.interfaces.globalVarsInterface;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.LinkedList;
 
-public class MainActivity2 extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity2 extends AppCompatActivity implements globalVarsInterface{
     public RecyclerView recyclerView;
+    public FloatingActionButton proceedToBilling;
     public LinkedList<String> ItemsOrdered = new LinkedList<>();
     public LinkedList<Integer> ItemsOrderedPrice = new LinkedList<>();
     public ItemListAdapter adapter;
@@ -50,7 +53,17 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
         recyclerView.setAdapter(adapter);
 //        recyclerView.setOnClickListener(this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
+        proceedToBilling = findViewById(R.id.fab);
+        proceedToBilling.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent BillingActivty = new Intent(getApplicationContext(), BillingActivity.class);
+                BillingActivty.putExtra("BillList",UserClickedItems);
+                BillingActivty.putExtra("Item available", ItemNamesInStore);
+                BillingActivty.putExtra("Prices", PricesOfItemsInStore);
+                startActivity(BillingActivty);
+            }
+        });
     }
 
 //    @Override

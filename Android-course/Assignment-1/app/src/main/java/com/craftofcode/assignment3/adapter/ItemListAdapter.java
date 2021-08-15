@@ -10,16 +10,18 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.craftofcode.assignment3.R;
+import com.craftofcode.assignment3.interfaces.globalVarsInterface;
 
 import java.util.LinkedList;
 
-public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ItemViewHolder>{
+public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ItemViewHolder> implements globalVarsInterface{
     private final LinkedList<String> ItemName;
     private final LinkedList<Integer> ItemImage;
     private final LinkedList<Double> ItemPricell;
     private LayoutInflater ItemLayoutInflater;
 
-    class ItemViewHolder extends RecyclerView.ViewHolder{
+
+    static class ItemViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         public ImageView ImageItem;
         public TextView Itemname;
         public TextView ItemPrice;
@@ -31,6 +33,12 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ItemVi
             Itemname = ItemView.findViewById(R.id.item_title);
             ItemPrice = ItemView.findViewById(R.id.Item_price);
             this.ItemAdapter = ItemAdapter;
+            ItemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+            UserClickedItems.add(getLayoutPosition());
         }
     }
 
@@ -53,6 +61,8 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ItemVi
         holder.ImageItem.setImageResource(CurrentImage);
         holder.Itemname.setText(CurrentItemName);
         holder.ItemPrice.setText(String.valueOf(CurrentItemPrice));
+
+        //onclick listener here
     }
 
     @Override
