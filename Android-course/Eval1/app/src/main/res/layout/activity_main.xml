@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+
+    <TextView
+        android:layout_margin="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registration"
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        android:textColor="@color/teal_700"/>
+
+    <EditText
+        android:id="@+id/uname"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username_1"
+        android:minHeight="48dp"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/fname"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/full_name"
+        android:minHeight="48dp"
+        android:textColorHint="@color/white" />
+
+    <AutoCompleteTextView
+        android:id="@+id/city"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/city"
+        android:minHeight="48dp"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/email"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/e_mail"
+        android:minHeight="48dp"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/pwd"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:minHeight="48dp"
+        android:textColorHint="@color/white" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/agree_with_terms_and_conditions"
+        android:id="@+id/cb"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:id="@+id/registerbutton"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/error"
+        android:textColor="@color/white"/>
+</LinearLayout>

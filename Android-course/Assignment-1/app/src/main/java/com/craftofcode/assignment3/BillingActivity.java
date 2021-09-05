@@ -38,7 +38,7 @@ public class BillingActivity extends AppCompatActivity {
         i = 0;
         for(int s:UserPurchase){
             ItemPricesUserPurchased[i] = ItemsPrices[s];
-            ItemPricesUserPurchased2[i] = ItemsUserPurchased[i] + "\t\t\t\t     " + "     \t\t\t\t"+ String.valueOf(ItemsPrices[s]);
+            ItemPricesUserPurchased2[i] = ItemsUserPurchased[i] + "\t\t\t\t     " + "     \t\t\t\t₹"+ String.valueOf(ItemsPrices[s]);
             i++;
         }
 
@@ -52,6 +52,6 @@ public class BillingActivity extends AppCompatActivity {
         for(int s: UserPurchase){
             Total += ItemsPrices[s];
         }
-        totalprice.setText("Total: " + String.valueOf(Total));
+        totalprice.setText("Total: ₹" + String.valueOf(Total));
     }
 }

@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">Eval1</string>
+    <string name="full_name">Full name</string>
+    <string name="city">City</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="register">register</string>
+    <string name="agree_with_terms_and_conditions">Agree with terms and conditions</string>
+    <string name="email_error">Error, check email format</string>
+    <string name="error_username">Username is left empty</string>
+    <string name="error_pwd">Password is left empty</string>
+    <string name="error_fullname">Full name is left empty</string>
+    <string name="email_empty_error">E-mail field is left empty</string>
+    <string name="exceeded_error">attempts exceeded 3 . Sorry contact admin.</string>
+    <string name="username" />
+    <string name="registration">Registration</string>
+    <string name="username_1">Username</string>
+
+</resources>

@@ -60,7 +60,7 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ItemVi
         double CurrentItemPrice = ItemPricell.get(position);
         holder.ImageItem.setImageResource(CurrentImage);
         holder.Itemname.setText(CurrentItemName);
-        holder.ItemPrice.setText(String.valueOf(CurrentItemPrice));
+        holder.ItemPrice.setText("₹"+String.valueOf(CurrentItemPrice));
 
         //onclick listener here
     }

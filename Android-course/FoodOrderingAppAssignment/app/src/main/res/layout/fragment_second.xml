@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4"
+    android:orientation="vertical">
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:background="@color/_light_green"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:id="@+id/itemList2"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_weight="2"
+            android:text="@string/count_0"
+            android:textColor="@color/red"
+            android:id="@+id/count"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/check_out"
+            android:id="@+id/checkout"
+            android:layout_marginRight="20sp"/>
+
+    </LinearLayout>
+</LinearLayout>
+</FrameLayout>

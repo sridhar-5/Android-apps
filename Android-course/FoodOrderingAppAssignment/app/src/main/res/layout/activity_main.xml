@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/turquoise"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registration"
+        android:textColor="@color/tomato"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:layout_marginTop="40sp"
+        android:textSize="30sp"
+        tools:ignore="InefficientWeight" />
+
+    <LinearLayout
+        android:layout_marginTop="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="20sp"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_marginRight="20sp"
+            android:layout_height="wrap_content"
+            android:text="@string/username"/>
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20sp"
+            android:layout_weight="1"
+            android:hint="@string/your_name_here"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_marginRight="20sp"
+            android:text="@string/mobile_number"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mobile_no"
+            android:layout_weight="1"
+            android:id="@+id/mobileNoEditText"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:id="@+id/Login"
+            android:text="@string/login"
+            android:textColor="@color/antique_white"/>
+    </LinearLayout>
+
+</LinearLayout>

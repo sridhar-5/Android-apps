@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FoodOrderingAppAssignment</string>
+    <string name="registration">Registration</string>
+    <string name="name">Name</string>
+    <string name="your_name_here">your name here</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="address">Address</string>
+    <string name="validate">validate</string>
+    <string name="register">register</string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="count_0">Count = 0</string>
+    <string name="check_out">Check Out</string>
+</resources>
