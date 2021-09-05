@@ -15,7 +15,7 @@ import android.widget.ListView;
 public class FirstFragment extends Fragment {
     ListView listView;
     FragmentCommunicator communicate;
-    String[] Items = {"Veg Fried Rice\t\t\t\t\t\t\t\t\t\t₹240", "Veg Manchurian\t\t\t\t\t\t\t\t\t\t₹210", "French Fries\t\t\t\t\t\t\t\t\t\t₹150", "Palak Paneer\t\t\t\t\t\t\t\t\t\t₹200", "Paneer Butter Masala\t\t\t\t\t\t\t\t\t\t₹250", "Butter Naan\t\t\t\t\t\t\t\t\t\t₹45"};
+    String[] Items = {"Veg Fried Rice\t\t\t\t\t\t\t\t\t\t₹240", "Veg Manchurian\t\t\t\t\t\t\t\t\t\t₹210", "French Fries\t\t\t\t\t\t\t\t\t\t₹150", "Palak Paneer\t\t\t\t\t\t\t\t\t\t₹200", "Paneer Butter Masala\t\t\t\t\t\t\t\t\t\t₹250", "Butter Naan\t\t\t\t\t\t\t\t\t\t₹045"};
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

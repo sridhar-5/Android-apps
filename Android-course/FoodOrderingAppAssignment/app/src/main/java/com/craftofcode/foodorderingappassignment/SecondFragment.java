@@ -1,5 +1,6 @@
 package com.craftofcode.foodorderingappassignment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -48,11 +49,10 @@ public class SecondFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 int count = SelectedItems.size();
-                if (communicator == null){
-                    communicator = (SecondThirdFragCommunicator)getActivity();
-                }
-
-                communicator.respondSecThird(count, SelectedItems,new ThirdFragment());
+                Intent intent = new Intent(getActivity(),MainActivity3.class);
+                intent.putExtra("count",count);
+                intent.putStringArrayListExtra("ItemList", SelectedItems);
+                startActivity(intent);
             }
         });
 

@@ -10,14 +10,18 @@ import android.util.Log;
 
 import java.util.ArrayList;
 
-public class MainActivity2 extends AppCompatActivity implements FragmentCommunicator, SecondThirdFragCommunicator{
-
+public class MainActivity2 extends AppCompatActivity implements FragmentCommunicator{
+    public String MobileNumber;
+    public String Username;
+    Varibles var;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-
-
+        Bundle bundle = getIntent().getExtras();
+        MobileNumber = bundle.getString("PhoneNumber");
+        Username = bundle.getString("Username");
+        //var.Variables(MobileNumber,Username);
     }
 
     @Override
@@ -28,11 +32,4 @@ public class MainActivity2 extends AppCompatActivity implements FragmentCommunic
         frag.RenderSelectedItemsData(item);
     }
 
-    @Override
-    public void respondSecThird(int i, ArrayList items, Fragment fragment) {
-        FragmentManager manage = getSupportFragmentManager();
-        FragmentTransaction ft = manage.beginTransaction();
-        ft.replace(R.id.framelayout,fragment);
-        ft.commit();
-    }
 }
