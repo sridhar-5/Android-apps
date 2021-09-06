@@ -1,2 +1,2 @@
 # Android-apps
-This repository contains all the android apps designed by me.
+This repository contains all the android apps created by me.
